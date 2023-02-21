@@ -1,0 +1,86 @@
+.login {
+  display: grid;
+  grid-template-areas: 'switch'
+    'form'
+    'foot';
+
+  .active {
+    color: $jet;
+    border-bottom: 2px solid $peach;
+  }
+
+  .inactive {
+    color: $grey;
+    transition: all 0.1s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      color: $jet
+    }
+  }
+
+  &__switch {
+    grid-area: switch;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  &__form {
+    grid-area: form;
+    padding: 1rem;
+    form {
+      display: grid;
+      justify-items: center;
+      row-gap: 0.5rem;
+    }
+  }
+
+  &__input {
+    text-align: center;
+    transition: all 0.1s ease-in-out;
+    background-color: $lightgrey;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: .2rem;
+    padding: 1rem 1.2rem;
+    border: 2px solid $lightgrey;
+    border-radius: 5px 5px 5px 5px;
+    width: 85%;
+
+    &:focus {
+      background-color: $latte;
+      border-bottom: 2px solid $peach;
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    width: 50%;
+    background-color: $peach;
+
+    &:hover {
+      background-color: lighten($peach, 10%);
+    }
+  }
+
+  &__foot {
+    grid-area: foot;
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 10px 8px 10px 8px;
+  }
+}

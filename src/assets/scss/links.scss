@@ -1,0 +1,12 @@
+a.link {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  color: $peach;
+  padding: 0.2rem;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $nickle;
+    color: lighten($color: $peach, $amount: 10);
+  }
+}

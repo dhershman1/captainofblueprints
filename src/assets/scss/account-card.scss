@@ -1,0 +1,20 @@
+.account {
+  grid-area: aside;
+  display: grid;
+  grid-template-areas: 'basic'
+                       'other'
+                       'other2';
+
+  &__username {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  &__details {
+    font-size: 14px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

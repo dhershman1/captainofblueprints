@@ -1,0 +1,43 @@
+.navbar {
+  display: grid;
+  background-color: $jet;
+  grid-template-columns: 1fr 1fr;
+
+  a {
+    text-decoration: none;
+  }
+
+  .brand {
+    font-size: 24px;
+    padding: 1rem;
+    a {
+      color: $peach;
+    }
+  }
+
+  &__links {
+    display: inline-grid;
+    grid-template-columns: repeat(5, 20%[col-start]);
+    font-size: 20px;
+    a {
+      text-align: center;
+      padding-top: 1rem;
+      color: $latte;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: $latte;
+        color: $jet;
+      }
+
+      &.router-link-active {
+        color: $peach;
+
+        &:hover {
+          color: $jet;
+        }
+      }
+
+    }
+  }
+}
