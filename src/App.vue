@@ -3,7 +3,7 @@
     <header class="navbar">
       <div class="brand">
         <router-link to="/">
-          Buildheim
+          Captain of Blueprints
         </router-link>
       </div>
       <div class="navbar__links">
